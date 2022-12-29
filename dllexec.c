@@ -39,7 +39,7 @@ int main(int argc, char* argv[]) {
     }
 
 
-    // execute the given function as well as DllMain
+    // execute the given function
     printf("dllexec: executing\n");
     FARPROC executeFunction = GetProcAddress(loadedLibrary, func);
     if (executeFunction == NULL) {
